@@ -4,7 +4,8 @@
     "**/*[sS]pec.js"
   ],
   "helpers": [
-    "src/**/*.js"
+    "../src/**/*.js",
+    "../src/Player.js"
   ],
   "stopSpecOnExpectationFailure": false,
   "random": false
