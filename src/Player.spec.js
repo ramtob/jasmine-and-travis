@@ -1,6 +1,12 @@
+var Player = require('./Player').func;
+var Song = require('./Song').func;
+//require('./SpecHelper');
+
 describe("Player", function() {
   var player;
   var song;
+
+  require('../spec/jasmineCustomMatchers');
 
   beforeEach(function() {
     player = new Player();
@@ -52,7 +58,7 @@ describe("Player", function() {
 
       expect(function() {
         player.resume();
-      }).toThrow("song is already playing");
+      }).toThrowError("song is already playing");
     });
   });
 });
